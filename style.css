@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Poppins';
+    width: 960px;
+    height: 300px;
+    margin: 10% auto;
+}
+
+.text-dash {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 6.5s infinite linear;
+}
+
+.text-dash:nth-child(1){
+    stroke: #0e0d02;
+    animation-delay: -1;
+}
+
+.text-dash:nth-child(2){
+    stroke: #0e0d02;
+    animation-delay: -2s;
+}
+
+.text-dash:nth-child(3){
+    stroke: #0e0d02;
+    animation-delay: -3s;
+}
+
+.text-dash:nth-child(4){
+    stroke: #0e0d02;
+    animation-delay: -4s;
+}
+
+.text-dash:nth-child(5){
+    stroke: #0e0d02;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: 35%;}
+}
+
+#workout-list {
+    text-align: center;
+    list-style: none;
+}
+
+.workout-card {
+    width: 300px;
+    min-width: 300px;
+    height: auto;
+    background: #fff;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    margin: 25px;
+    min-height: 356px;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.workout-card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
