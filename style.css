@@ -9,7 +9,7 @@ svg {
     font: 10.5em 'Poppins';
     width: 960px;
     height: 300px;
-    margin: 10% auto;
+    margin: 0% auto;
 }
 
 .text-dash {
@@ -55,15 +55,20 @@ svg {
     list-style: none;
 }
 
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-self: center;
+}
+
 .workout-card {
-    width: 300px;
+    width: 400px;
     min-width: 300px;
-    height: auto;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 30px;
-    position: relative;
-    z-index: 10;
-    margin: 25px;
+    margin: 35px;
     min-height: 356px;
     transition: all .25s ease;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
@@ -75,6 +80,11 @@ svg {
     box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.7);
 }
 
-h2 {
+a {
     font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    text-decoration: dashed;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+    margin: 31%;
 }

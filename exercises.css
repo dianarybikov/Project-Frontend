@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    text-align: center;
+    vertical-align: text-top;
+    font-family: 'Roboto';
+    background: antiquewhite;
+}
+#container {
+    width: 100%;
+    bottom: 45%;
+    color: 360ff4e;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+}
+#anim-box {
+    height: 50px;
+    overflow: hidden;
+}
+#anim-box > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 445px;
+    display: inline-block;
+}
+#anim-box div:first-child {
+    animation: anim 4s ease infinite;
+}
+#anim-box div:last-child {
+    background:salmon;
+}
+@keyframes anim {
+    0% {margin-top: -270px;}
+    5% {margin-top: -180px;}
+    33% {margin-top: -180px;}
+    38% {margin-top: -90px;}
+    66% {margin-top: -90px;}
+    71% {margin-top: 0px;}
+    99.99% {margin-top: 0px;}
+    100% {margin-top: -270px;}
+}
+
+h1 {
+    text-align: center;
+}
+
+#workout-list {
+    text-align: center;
+    list-style: none;
+}
+
+div {
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-self: center;
+}
+
+.workout-card {
+    width: 400px;
+    min-width: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 35px;
+    min-height: 356px;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.workout-card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.7);
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    text-decoration: dashed;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+    margin: 31%;
+}
+
+img {
+    height: auto;
+    width: 400px;
+}
