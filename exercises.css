@@ -1,9 +1,13 @@
 body {
-    margin: 0px;
+    margin: 0%;
     text-align: center;
     vertical-align: text-top;
     font-family: 'Roboto';
-    background: antiquewhite;
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 125vh;
 }
 #container {
     width: 100%;
@@ -29,7 +33,7 @@ body {
     animation: anim 4s ease infinite;
 }
 #anim-box div:last-child {
-    background:salmon;
+    background:rgb(0, 0, 0);
 }
 @keyframes anim {
     0% {margin-top: -270px;}
@@ -42,35 +46,33 @@ body {
     100% {margin-top: -270px;}
 }
 
+#homepage {
+    font-size: x-small;
+}
+
+#homepage:hover {
+    color: blue;
+}
+
 h1 {
     text-align: center;
 }
 
-#workout-list {
-    text-align: center;
-    list-style: none;
-}
-
-div {
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-content: center;
-    align-self: center;
-}
-
-.workout-card {
+.exercise-card {
     width: 400px;
     min-width: 300px;
     background: rgb(255, 255, 255);
     border-radius: 30px;
     margin: 35px;
-    min-height: 356px;
+    height: 860px;
+    min-height: 680px;
     transition: all .25s ease;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
     cursor: pointer;
+    display:inline-table;
 }
 
-.workout-card:hover {
+.exercise-card:hover {
     transform: translate(0, -10px);
     box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.7);
 }
@@ -87,4 +89,5 @@ a {
 img {
     height: auto;
     width: 400px;
+    border-radius: 25px;
 }

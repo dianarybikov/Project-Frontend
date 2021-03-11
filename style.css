@@ -1,7 +1,10 @@
 body {
     width: 100%;
-    height: 100vh;
-    background-color: antiquewhite;
+    height: 100%;
+    background: #DAE2F8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-repeat: no-repeat;
 }
 
 svg {
@@ -65,10 +68,13 @@ div {
 
 .workout-card {
     width: 400px;
-    min-width: 300px;
-    background: rgb(255, 255, 255);
+    height: 400px;
+    /* background: rgb(151, 63, 85); */
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 30px;
-    margin: 35px;
+    margin: 30px;
     min-height: 356px;
     transition: all .25s ease;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.8);
@@ -87,4 +93,22 @@ a {
     font-style: oblique;
     color: rgb(0, 0, 0);
     margin: 31%;
+}
+
+h3 {
+    margin-left: 38%;
+}
+
+h6 {
+    text-align: center;
+}
+
+#creater-name {
+    text-align: center;
+    font-size: smaller;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#creater-name:hover {
+    color: blue;
 }
