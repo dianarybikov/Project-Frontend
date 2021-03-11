@@ -11,12 +11,13 @@ fetch(workoutsURL + workoutsId)
 
             const workoutCard = document.createElement("div")
     
-            workoutCard.className = 'workout-card'
+            workoutCard.className = 'exercise-card'
             workoutCard.innerHTML = `
-                <h1>Name: ${exercise.name}</h1>
-                <h2>Description: ${exercise.description}</h2>
-                <h3>Primary Muscles Used: ${exercise.primary_muscle}</h3>
-                <h4>Time Duration: ${exercise.time_duration} minute(s)</h4>
+                <h1>${exercise.name}</h1>
+                <h2>Directions: <br>${exercise.description}</h2>
+                <h3>Primary Muscles Used: <br>${exercise.primary_muscle}</h3>
+                <h4>Length of Time: <br>${exercise.time_duration} minute(s)</h4>
+                <br><br>
                 <img src="${exercise.image}" alt="${exercise.name} image">
                 `
             workoutInfo.append(workoutCard)
